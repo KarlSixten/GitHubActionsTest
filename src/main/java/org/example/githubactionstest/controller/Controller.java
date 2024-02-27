@@ -8,4 +8,9 @@ public class Controller {
     public String getWelcome() {
         return "welcome";
     }
+
+    @GetMapping("hello")
+    public String getHello() {
+        return "hello";
+    }
 }

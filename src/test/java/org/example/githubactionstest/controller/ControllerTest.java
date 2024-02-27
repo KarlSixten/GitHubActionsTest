@@ -24,4 +24,11 @@ class ControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(view().name("welcome"));
     }
+
+    @Test
+    void hello() throws Exception {
+        mockMvc.perform(get("/hello"))
+                .andExpect(status().isOk())
+                .andExpect(view().name("hello"));
+    }
 }
